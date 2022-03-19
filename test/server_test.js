@@ -17,8 +17,8 @@ describe('Test GET posts', () => {
                 .get("/api/v1/post")
                 .end((err, response) => {
                     response.should.have.status(200);
-                    // response.body.should.be.a('object');
-                    response.body.should.be.a('array');
+                    response.body.should.be.a('object');
+                    // response.body.should.be.a('array');
                     done();
                 });
         });
